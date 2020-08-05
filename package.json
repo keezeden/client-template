@@ -1,0 +1,26 @@
+{
+  "name": "client-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "env-cmd -f .dev.env parcel index.html --no-cache",
+    "start:uat": "env-cmd -f .uat.env parcel index.html --no-cache",
+    "start:prd": "env-cmd -f .prd.env parcel index.html --no-cache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "parcel-bundler": "^1.12.4",
+    "tailwindcss": "^1.6.2"
+  },
+  "dependencies": {
+    "firebase": "^7.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  }
+}
